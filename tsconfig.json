@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "ES2020",
+    "lib": ["ES2020"],
+    
+    // Module Resolution
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    
+    // Emit
+    "outDir": "./dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "removeComments": true,
+    
+    // Type Checking
+    "strict": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    // Interop Constraints
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // Type Roots
+    "types": ["node", "@playwright/test"],
+  },
+  
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts",
+    "fixtures/**/*.ts",
+    "utils/**/*.ts",
+    "test-data/**/*.ts"
+  ],
+  
+  "exclude": [
+    "node_modules",
+    "playwright-report",
+    "test-results",
+    "dist"
+  ]
+}

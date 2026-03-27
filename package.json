@@ -1,0 +1,50 @@
+{
+  "name": "playwright-bdd-template",
+  "version": "1.0.0",
+  "description": "A clean Playwright BDD testing template with Gherkin/Cucumber support and TypeScript",
+  "license": "MIT",
+  "scripts": {
+    "pretest": "bddgen",
+    "test": "playwright test",
+    "test:headed": "npm run test -- --headed",
+    "test:debug": "npm run test -- --debug",
+    "test:smoke": "npm run test -- --grep @smoke",
+    "test:smoke:headed": "npm run test:smoke -- --headed",
+    "test:regression": "npm run test -- --grep @regression",
+    "test:regression:headed": "npm run test:regression -- --headed",
+    "test:chromium": "npm run test -- --project=chromium",
+    "test:firefox": "npm run test -- --project=firefox",
+    "test:webkit": "npm run test -- --project=webkit",
+    "test:smoke:chromium": "npm run test:smoke -- --project=chromium",
+    "test:smoke:firefox": "npm run test:smoke -- --project=firefox",
+    "test:smoke:webkit": "npm run test:smoke -- --project=webkit",
+    "test:regression:chromium": "npm run test:regression -- --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "playwright-bdd",
+    "bdd",
+    "cucumber",
+    "gherkin",
+    "testing",
+    "e2e",
+    "automation",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.17.2",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.3.2",
+    "dotenv": "^16.6.1",
+    "dotenv-expand": "^12.0.3",
+    "nodemon": "^3.1.10",
+    "npm-run-all": "^4.1.5",
+    "playwright-bdd": "^8.4.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-gherkin": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.0"
+  }
+}
