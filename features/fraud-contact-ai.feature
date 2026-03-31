@@ -1,4 +1,3 @@
-gherkin
 Feature: Fraud Contact Form
 
   Scenario: Successfully submit fraud contact form with valid data
