@@ -8,8 +8,8 @@ Feature: Contact form - Fraud Management
   Scenario: Successfully submit the contact form with valid data
     Given I am on the Fraud Management contact page
     When I fill in the contact form with valid data
-      | lastName | firstName | email                 | phone      | website          | revenue            | business            | message                     |
-      | Doe      | John      | john.doe123@gmail.com | 0612345678 | https://test.com | Less than 500 000€ | Online and in store | Interested in your solution |
+      | lastName | firstName | email                 | phone      | website          | revenue             | business            | message                     |
+      | Doe      | John      | john.doe123@gmail.com | 0612345678 | https://test.com | Less than 500 0000€ | Online and in store | Interested in your solution |
     And I submit the form
     Then the form should be successfully submitted
 

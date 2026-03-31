@@ -67,7 +67,7 @@ export default defineConfig({
     video: 'retain-on-failure',
 
     // Default timeout for actions (click, fill, etc.)
-    actionTimeout: 20 * 1000,
+    actionTimeout: 5 * 1000,
 
     // Default navigation timeout
     navigationTimeout: 30 * 1000,

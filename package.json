@@ -33,6 +33,7 @@
     "typescript"
   ],
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
     "@playwright/test": "^1.55.0",
     "@types/node": "^22.17.2",
     "allure-commandline": "^2.29.0",
